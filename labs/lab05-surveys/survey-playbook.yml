@@ -1,0 +1,7 @@
+- name: Say Hello
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Greet user
+      debug:
+        msg: "Hello, {{ user_name }}!"
